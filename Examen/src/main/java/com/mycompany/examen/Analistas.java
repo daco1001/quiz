@@ -9,18 +9,21 @@ package com.mycompany.examen;
  * @author danie
  */
 class Analistas extends Trabajadores {
-    private double salarioFijo;
-    private double descuento;
 
-    public Analistas(double salarioFijo, double descuento, String nombre, String codigo) {
+    private double salario;
+    private double descuento;
+    
+    public Analistas(String nombre, String codigo, double salario) {
         super(nombre, codigo);
-        this.salarioFijo = salarioFijo;
-        this.descuento = descuento;
+     this.salario=salario;
     }
+
+
+   
   @Override
   public double obtenerSueldos(){
   descuento=0.96;
-  return salarioFijo*descuento;
+  return salario*descuento;
   }  
     
 }

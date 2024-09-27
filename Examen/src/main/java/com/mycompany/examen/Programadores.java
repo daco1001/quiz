@@ -11,14 +11,16 @@ package com.mycompany.examen;
 class Programadores extends Trabajadores {
   private double salarioFijo;
   
-    public Programadores(double sueldoFijo, String nombre, String codigo) {
+    public Programadores(double salarioFijo, String nombre, String codigo) {
         super(nombre, codigo);
-        this.salarioFijo = sueldoFijo;
+        this.salarioFijo = salarioFijo;
     }
 
   @Override
   public double obtenerSueldos(){
   return salarioFijo;
   }
+
+   
  
 }

@@ -18,4 +18,5 @@ abstract class Trabajadores {
     }
   
   public abstract double obtenerSueldos();
+ 
 }

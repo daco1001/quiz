@@ -9,19 +9,19 @@ package com.mycompany.examen;
  * @author danie
  */
 class Desarrolladores extends Trabajadores{
- private double salarioFijo;
+ private double salarioF;
  private double bonificacion;
 
-    public Desarrolladores(double salarioFijo, double bonificacion, String nombre, String codigo) {
+    public Desarrolladores(double salarioF,  String nombre, String codigo) {
         super(nombre, codigo);
-        this.salarioFijo = salarioFijo;
-        this.bonificacion = bonificacion;
+        this.salarioF = salarioF;
+        
     }
  
  @Override
   public double obtenerSueldos(){
-  bonificacion= salarioFijo*0.95;
-  return salarioFijo + bonificacion;
+  bonificacion= salarioF*0.95;
+  return salarioF + bonificacion;
   }  
  
 }
